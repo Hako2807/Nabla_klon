@@ -1,6 +1,155 @@
 /*mørke-blå-farge: 23, 62, 161 */
 /*bakgrunnsfarge: 233, 237, 245*/
 
+:root {
+    --nabla-yellow: #FFD500;
+    --nabla-yellow-dark: #FDC500;
+    --nabla-yellow-light: #ffff72;
+    --nabla-blue: #003F88; /* navbar + overskrifter */
+    --nabla-blue-dark: #00296B;
+    --nabla-blue-light: #00509D;
+    --nabla-background: rgba(0, 80, 157, 0.05);
+    --event: #5cb85c;
+    --bedpres: #f5b507;
+    --box-color: #ffffff;
+    --text-color: #000000;
+    --header: #003F88;
+}
 
+header {
+    display: block;
+    background-color: var(--header);
+    color:#FFFFFF;
+}
+
+footer{
+    display: block;
+    background-color: var(--header);
+    color: #ffffff;
+}
+
+a:link{
+    color: white;
+}
+a:hover{
+    color: rgb(233,237,245);
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20 px;
+    
+}
+
+
+
+nav {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .05);
+}
+
+.center {
+    align-self: center;
+}
+
+.footer-grid {
+    display: grid;
+    gap: 40px;
+    grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+}
+
+.footer-item {
+    padding: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.main-container {
+    display: grid;
+    font-size: 10px;
+    grid-template: repeat(12, 1fr) / repeat(3, 1fr);
+    padding: 10px;
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    overflow: hidden;
+    min-height: 0;
+    min-width: 0;
+}
+
+.top_left_frame {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.right_frame {
+    grid-column-start:3;
+}
+
+.tall_frame {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.second_line {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.third_line {
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.fourth_line {
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.fifth_line {
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+
+.button {
+    background-color: var(--nabla-blue-dark); 
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    outline: none;
+  }
+
+.button:hover {
+    background-color: var(--nabla-blue-light);
+    color: white;
+}
 
 body {background-color: rgb(233,237,245)}
+
+@font-face {
+    font-family: "Font Awesome 5 Brands";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url(../webfonts/fa-brands-400.eot);
+    src: url(../webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-brands-400.woff2) format("woff2"),url(../webfonts/fa-brands-400.woff) format("woff"),url(../webfonts/fa-brands-400.ttf) format("truetype"),url(../webfonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands"
+}
+
